@@ -26,6 +26,32 @@
     <h2 class="titulo-seccion">Mapa Interactivo del Barrio</h2>
     <div id="map"></div>
 
+    <!-- SECCIÓN 3: Análisis de vegetación -->
+    <section class="analisis-seccion">
+        <h2 class="titulo-seccion">Análisis de Vegetación</h2>
+        <p>En esta sección se presenta un análisis de los índices de vegetación NDVI y SAVI para el barrio Techo. Estos índices nos permiten evaluar la cantidad y salud de la vegetación en el área.</p>
+        
+        <div class="analisis-grid">
+            <div class="analisis-card">
+                <h3 class="analisis-titulo">NDVI (Índice de Vegetación de Diferencia Normalizada)</h3>
+                <p>El NDVI es un indicador simple de la actividad fotosintética de las plantas. Varía entre -1 y 1, donde los valores más altos indican vegetación más densa y saludable.</p>
+                <div id="ndvi-info">
+                    <p><strong>Fórmula:</strong> NDVI = (NIR - RED) / (NIR + RED)</p>
+                    <p>Donde NIR es la reflectancia en el infrarrojo cercano y RED es la reflectancia en el rojo visible.</p>
+                </div>
+            </div>
+            
+            <div class="analisis-card">
+                <h3 class="analisis-titulo">SAVI (Índice de Vegetación Ajustado al Suelo)</h3>
+                <p>El SAVI es una modificación del NDVI que corrige la influencia del brillo del suelo en áreas con vegetación escasa. El factor L varía según la densidad de la vegetación.</p>
+                <div id="savi-info">
+                    <p><strong>Fórmula:</strong> SAVI = ((NIR - RED) / (NIR + RED + L)) × (1 + L)</p>
+                    <p>Donde L es un factor de ajuste que varía entre 0 (vegetación muy densa) y 1 (vegetación muy escasa).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Scripts de Leaflet -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/digidem/leaflet-side-by-side/leaflet-side-by-side.min.js"></script>
