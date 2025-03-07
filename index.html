@@ -3,20 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Página del Barrio Techo Kennedy</title>
+
+    <!-- Enlaces a archivos CSS -->
+    <link rel="stylesheet" href="estilos.css">
+    
+    <!-- Librerías de Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.css">
 </head>
 <body>
+    <!-- SECCIÓN 1: Imagen con texto -->
     <section class="banner">
-        <div class="overlay"></div>
         <img src="techo.jpg" alt="Foto del Barrio Techo Kennedy">
         <div class="texto-banner">
             <h1>Barrio Techo Kennedy</h1>
             <h2>Localidad de Kennedy</h2>
         </div>
     </section>
+
+    <!-- SECCIÓN 2: Mapa -->
+    <h2 class="titulo-seccion">Mapa Interactivo del Barrio</h2>
+    <div id="map"></div>
+
+    <!-- Scripts de Leaflet -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/digidem/leaflet-side-by-side/leaflet-side-by-side.min.js"></script>
+    <script src="https://unpkg.com/@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.min.js"></script>
+    
+    <!-- Tu archivo JavaScript -->
     <script src="programa.js"></script>
 </body>
-</html>
-
 </html>
